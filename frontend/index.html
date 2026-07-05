@@ -569,7 +569,7 @@
     <p class="sub">Configure the PadhAI backend connection.</p>
     <div class="field">
       <label>Backend base URL</label>
-      <input type="text" id="backendUrlInput" placeholder="http://localhost:3000" />
+      <input type="text" id="backendUrlInput" placeholder="https://ubiquitous-eureka-mx66.onrender.com/" />
     </div>
     <div class="status-line">
       <span class="health-dot" id="modalHealthDot"></span>
@@ -596,7 +596,7 @@
   "use strict";
  
   // ---------------- CONFIG / STATE ----------------
-  const DEFAULT_BACKEND = "http://localhost:3000";
+  const DEFAULT_BACKEND = "https://ubiquitous-eureka-mx66.onrender.com/";
   let settings = { backendUrl: DEFAULT_BACKEND, defaultClass: "9" };
   let streak = { count: 0, lastActiveDate: null };
   let doubtsIndex = []; // [{id,title,subject,classLevel,updatedAt}]
