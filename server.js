@@ -16,7 +16,7 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors({ origin: 'https://6a495fcdf7d97f1c9ec61dc7--dapper-fudge-072c14.netlify.app/' }));
+app.use(cors({ origin: '*' }));
 app.use(express.json({ limit: '1mb' }));
 
 const PORT = process.env.PORT || 3000;
